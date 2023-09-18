@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop</title>
+    <link rel="icon" href="images/favicon.webp" type="image/x-icon">
+   <!-- <link rel="shortcut icon" href="favicon.webp" type="image/x-icon">-->
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Mokka Flowers</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="map.html">Store Location</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <div class="cart">
+                    <a href="cart.html"><img src="images/cart.jpg" alt="Cart"></a>
+                </div>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h2>Beautiful Flowers for Every Occasion</h2>
+            <p>Discover a wide variety of fresh flowers to brighten up your day.</p>
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="search" class="search-bar" placeholder="Search">
+            <button id="search-button" class="search-btn"><img src="images/loupe.png"></button>
+        </div>
+    </section>
+
+    <h2 class="shop-heading">Shop Our Selection</h2>
+
+    <section id="shop">
+        
+
+        <div class="product">
+            <img src="images/rose.jpg" alt="Red Rose">
+            <h3>Red Rose</h3>
+            <p>Price: $10.99</p>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="images/tulip.webp" alt="Pink Tulip">
+            <h3>Pink Tulip</h3>
+            <p>Price: $8.99</p>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="images/lily.jpg" alt="White Lily">
+            <h3>White Lily</h3>
+            <p>Price: $12.99</p>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+    
+        <div class="product">
+            <img src="images/daisy.webp" alt="Yellow Daisy">
+            <h3>Yellow Daisy</h3>
+            <p>Price: $7.99</p>
+            <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+
+
+        <!-- Add more product entries here -->
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a family-owned flower shop committed to providing the freshest and most beautiful flowers in town. Our team of skilled florists is dedicated to creating stunning arrangements for all occasions.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to place an order, please don't hesitate to contact us:</p>
+        <address>
+            Email: <a href="mailto:info@flowershop.com">stasik_i_bogdan@flowershop.com</a><br> 
+            <div class="contact-info">
+                <span class="phone-label">Phone:</span>
+                <div class="dropdown">
+                  <button class="dropbtn">+380
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#home">993279005</a>
+                    <a href="#">680915479</a>
+                  </div>
+                </div>
+              </div>   
+        </address>
+    </section>
+    
+
+    <div class="scroll-to-top">
+        <a id="scrollButton">
+            <img src="images/arrow-up.png" alt="Scroll to Top">
+        </a>
+    </div>
+    
+    <script>
+        const scrollButton = document.getElementById('scrollButton');
+    
+        scrollButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>    
+
+    <footer>
+        <p>&copy; 2023 Mokka Flowers</p>
+    </footer>
+</body>
+</html>
